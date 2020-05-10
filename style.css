@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    min-width: 100%;
+    background-color: #333;
+}
+
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #eee;
+    text-align: center;
+    padding: 2%;
+}
+
+#dice-row {
+    text-align: center;
+}
+
+.dice {
+    display: inline-block;
+}
+
+.dice img {
+    padding: 5%;
+}
+
+.player-text {
+    font-family: sans-serif;
+    color: #eee;
+}
+
+#btn-row {
+    margin-top: 5%;;
+    text-align: center;
+}
+
+.btn span {
+    background-color: #920000;
+    color: #eee;
+    border-radius: 15px;
+    padding: 2% 25%;
+    display: inline-block;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Game of Dice</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title">Welcome to a Game of Dice!</h1>
+            </div>
+            
+        </div>
+        <div class="row" id="dice-row">
+            <div class="dice col-md-6" id="dice1">
+                <img src="./images/dice6.png" alt="Dice of Player 1"> <br>
+                <span class="player-text">Player 1</span>
+            </div>
+            <div class="dice col-md-6" id="dice2">
+                <img src="./images/dice6.png" alt="Dice of Player 2"> <br>
+                <span class="player-text">Player 2</span>
+            </div>
+        </div>
+        <div class="row" id="btn-row">
+            <div class="col-md-12 btn" onclick="randomDice()">
+                <span>Roll Dice!</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
