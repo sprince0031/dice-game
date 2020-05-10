@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
 html, body {
     margin: 0;
 }
@@ -9,7 +11,7 @@ html, body {
 }
 
 .title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Ubuntu, Arial, sans-serif;
     font-weight: bold;
     color: #eee;
     text-align: center;
@@ -29,7 +31,8 @@ html, body {
 }
 
 .player-text {
-    font-family: sans-serif;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.5em;
     color: #eee;
 }
 
@@ -44,4 +47,17 @@ html, body {
     border-radius: 15px;
     padding: 2% 25%;
     display: inline-block;
+}
+
+/**
+* For responsiveness
+*/
+@media only screen and (max-width: 767px) {
+    .container {
+        height: 100%;
+    }
+
+    #btn-row {
+        padding-bottom: 5%;
+    }
 }

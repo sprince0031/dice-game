@@ -18,9 +18,12 @@ async function randomDice() {
         await sleep(100);      
     }
     if (rand1 === rand2) {
-        document.querySelector(".title").textContent = "What do ya know.. Its a tie!";
+        document.querySelector(".title").innerHTML = "&#128681; Well what do ya know.. Its a tie! &#128681;";
     } else {
-        let winner = rand1>rand2?"1":"2";
-        document.querySelector(".title").textContent = "Player " + winner + " wins!";
+        if (rand1 > rand2) {
+            document.querySelector(".title").innerHTML = "&#128681; Player 1 wins!";
+        } else {
+            document.querySelector(".title").innerHTML = "Player 2 wins! &#128681;";
+        }
     }
 }
